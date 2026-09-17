@@ -1,13 +1,6 @@
 # 🏢 Veridian Corp — IT Support Agent
 
-> **AIONOS Assignment 2 — Internal Service Agent (IT Support)**
-> An intelligent, conversational IT support agent for Veridian Corp employees.
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-red)
-![Groq](https://img.shields.io/badge/LLM-Llama_3.3_70B-green)
-
-## 📋 Overview
+## \ Overview
 
 This agent handles internal employee IT support requests for Veridian Corp (set in the week of 21–25 September 2026). It uses Groq's Llama 3.3 70B model to:
 
@@ -20,7 +13,7 @@ This agent handles internal employee IT support requests for Veridian Corp (set 
 - **Show sources** — every response cites the KB article or policy used
 - **Answer questions** like "What needs action today?" or "Show security incidents"
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -42,33 +35,6 @@ This agent handles internal employee IT support requests for Veridian Corp (set 
 │  └──────┘    └──────────────┘  └───────────┘ │
 └─────────────────────────────────────────────┘
 ```
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.10+
-- A Groq API key (get one free at [console.groq.com](https://console.groq.com))
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/veridian-it-agent.git
-cd veridian-it-agent
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Set your API key (Option 1: environment variable)
-export GROQ_API_KEY="your_key_here"       # Linux/Mac
-set GROQ_API_KEY=your_key_here             # Windows CMD
-$env:GROQ_API_KEY="your_key_here"          # Windows PowerShell
-
-# Run the app
-streamlit run app.py
-```
-
-Alternatively, you can enter the API key directly in the app's sidebar.
 
 ## Features (4 Focused Views)
 
@@ -99,7 +65,7 @@ Policy grounding reference:
 - All 10 Knowledge Base articles (KB-01 to KB-10) with categories and approval constraints
 - Full extract of Finance & Assets Asset Management Policy (Q2 2026)
 
-## 📦 Data Sources
+##  Data Sources
 
 All data is sourced from the assignment data pack:
 - **10 Knowledge Base articles** (KB-01 to KB-10) — IT policies and procedures
@@ -107,7 +73,7 @@ All data is sourced from the assignment data pack:
 - **15 Employee Requests** (REQ-01 to REQ-15) — the week's IT issues
 - **11 Existing Tickets** (TK-1042 to TK-1051) — historical ticket context
 
-## 🛠️ AI Tools Used
+##  AI Tools Used
 
 | Tool | Usage |
 |------|-------|
@@ -115,7 +81,7 @@ All data is sourced from the assignment data pack:
 | **Streamlit** | Interactive web UI framework |
 | **Google Antigravity** | AI-assisted code generation and development |
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 veridian-it-agent/
