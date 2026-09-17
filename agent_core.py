@@ -17,7 +17,7 @@ from data_store import (
 )
 from ticket_manager import TicketManager
 # Configuration constants (inlined to eliminate external config.py dependency)
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_MODEL = "groq/compound"
 GROQ_TEMPERATURE = 0.3
 GROQ_MAX_TOKENS = 2048
