@@ -1,6 +1,6 @@
 # 🏢 Veridian Corp — IT Support Agent
 
-## \ Overview
+## Overview
 
 This agent handles internal employee IT support requests for Veridian Corp (set in the week of 21–25 September 2026). It uses Groq's Llama 3.3 70B model to:
 
@@ -95,7 +95,3 @@ veridian-it-agent/
 ├── .env.example        # API key template
 └── README.md           # This file
 ```
-
-## 📄 License
-
-This project was created as part of the AIONOS recruitment assignment.
