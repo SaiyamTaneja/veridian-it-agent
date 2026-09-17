@@ -17,8 +17,13 @@ from data_store import (
 )
 from ticket_manager import TicketManager
 # Configuration constants (inlined to eliminate external config.py dependency)
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-GROQ_MODEL = "groq/compound"
+import os
+try:
+    import streamlit as st
+    GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", os.environ.get("GROQ_API_KEY", ""))
+except Exception:
+    GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+GROQ_MODEL = "llama-3.3-70b-versatile"
 GROQ_TEMPERATURE = 0.3
 GROQ_MAX_TOKENS = 2048
 
